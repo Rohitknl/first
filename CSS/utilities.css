@@ -1,0 +1,29 @@
+.flex{
+    display:flex;
+}
+.flex-container{
+    dispaly:flex;
+    flex-direction: column;
+}
+.items-center{
+    align-items:center;
+}
+.items-right{
+    align-items:right;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.btn{
+    padding: 0.8rem 2rem;
+    font-size:1rem;
+    font-weight:600;
+    border:2px solid transparent;
+    cursor:pointer;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:var(--secondary);
+}
