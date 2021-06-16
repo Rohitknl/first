@@ -1,7 +1,9 @@
  @import 'utilities.css';
  :root{
      --primary:lightblue;
+     --name:lightgreen;
      --dark:black;
+     --bg:#f1f1ed;
      --pure:white;
      --ternary:gray;
      --light:gray;
@@ -9,6 +11,7 @@
 
  body{
      font-family:'Poppins',sans-serif;
+     background:var(--bg);
  }
 
  *{
@@ -19,8 +22,8 @@
  }
 
  header{
-    background: var(--dark);
-     height:800px;
+    background: var(--ternary);
+     clip-path:polygon(0 0, 100% 0, 100% 100%, 70% 90%, 0 100%);
  }
  
 
@@ -28,9 +31,11 @@
      max-width:1152px;
      padding:0 15px;
      margin: 0 auto;
+     
  }
 
  header nav .left a{
+    font-size: 1.5rem; 
      color:var(--pure);
      text-decoration:none;
      margin-right:2rem;
@@ -49,21 +54,57 @@
      margin-right:3rem;
  }
 
- .profile{
-    
-    width: 300px;
-	height: 300px;
-	border: 6px solid var(--primary);
+ .hero{
+     margin-top:1rem;
+ }
+ .hero .left img{
+     width:400px;
+     height:400px;
  }
 
- .hero{
-     color:var(--primary);
-     width: 400px;
-	 height: 300px;
- }
  .hero .right{
-     align-items: right;
+     color:var(--pure);
+     margin-left: 4rem;
+     margin-top:-4rem;
  }
+
  .hero .right h1{
-     color: var(--pure);
+     font-size:3.6rem;
+     font-weight:100;
+     color:var(--primary);
+     margin-top:0.5rem;
+     margin-bottom:0.5rem;
  }
+ .hero .right h6{
+     font-size:1.5rem;
+ }
+ .hero button{
+     margin-top:3rem;
+     margin-bottom: 3rem;
+     margin-left: 4rem;
+ }
+ section{
+     padding:7rem 0;
+     clip-path:polygon(0 0, 70% -10%, 100% 0, 100% 100%, 0 100%);
+ }
+
+ section .container h1{
+font-size:3rem;
+font-weight:100;
+ }
+section .container p{
+    font-family:'Lato' , sans-serif;
+    font-size:1.3rem;
+    line-height: 1.8;
+}
+ q {
+     line-height:1.8;
+     font-size:1.3rem;
+	font-weight: 400;
+	display: block;
+	font-style: italic;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+}

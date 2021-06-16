@@ -1,10 +1,7 @@
 .flex{
     display:flex;
 }
-.flex-container{
-    dispaly:flex;
-    flex-direction: column;
-}
+
 .items-center{
     align-items:center;
 }
@@ -27,3 +24,8 @@
     background:var(--primary);
     color:var(--secondary);
 }
+ .btn-primary:hover{
+     background:transparent;
+     border-color: var(--primary);
+     color:var(--primary);
+ }
