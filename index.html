@@ -10,21 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./Js/script.js"></script>
 </head>
 <body>
-    <header>
+    <header id="1">
         <div class="container">
         <nav class="flex items-center justify-between">
             <div class="left flex items-center">
                 <div>
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Interests</a>
-                    <a href="">Projects</a>
+                    <a href="#1">Home</a>
+                    <a href="#2">About</a>
+                    <a href="#3">Interests</a>
+                    <a href="#4">Projects</a>
                 </div>
             </div>
             <div class="right">
-                <button class="btn btn-primary">Contact</button>
+                <button class="btn btn-primary" onclick='location.href="#5"';>Contact</button>
             </div>
         </nav>
         <div class="hero flex items-center">
@@ -41,7 +42,9 @@
                 <h6>NIT KURUKSHETRA(INDIA)</h6>
             </div>
                 <div>
-                    <button class="btn btn-primary">DOWNLOAD CV</button>
+                    <form method="get" action="./Images/face.png">
+                        <button class="btn btn-primary">DOWNLOAD CV</button>
+                    </form>
                 </div>
             </div>
             
@@ -51,7 +54,7 @@
 
         </div>
     </header>
-    <section class="about">
+    <section class="about" id="2">
         <div class="container">
                 <h1>About Me</h1>
                 <p>I'm doing Masters in Computer Applications at <span class="sep">Nit Kurukshetra</span>. I was born and brought in Karnal(India).
@@ -60,6 +63,77 @@
                 <q>Seeking to be inspired, to work hard for the things that are worth it, and love to be surrounded by people who are on the same track.</q>
         </div>
     </section>
+    <section class="services" id="3">
+        <div class="container">
+            <h1 class="section-heading">Skills and Interests</h1>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="./Images/programming.png" alt="">
+                    <div class="write">
+                        <h2>Programming</h2>
+                        <ul>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>Core Java</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Images/webdesign.webp" alt="">
+                    <div class="write">
+                        <h2>Web Designing</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                        </ul>
+                    </div>
+                </div>         
+                
+            </div>
+        </div>
+    </section>
+    <section class="project_section" id="4">
+        <div class="project">
+            <h1 class="ptitle">Projects</h1>
+            <div class="card-wrapper">
+                <div class="card">                    
+                    <div class="write">
+                        <h2>Face Recognition System</h2>
+                        <p>A face recognition system using image processing and computer vision.Built using OpenCV and Python.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="write">
+                        <h2>Personal Portfolio Website</h2>
+                        <p>
+                            My personal portfolio website built using Html, Css and javascript.
+                        </p>
+                    </div>
+                </div>         
+                
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="contact" id="5">
+            <h2>Contact</h2>
+            <button class="btn btn-prim" onclick="location.href='mailto:rohitknl2016@gmail.com';">EMAIL</button>
+            <div class="im">
+                <div class="ima">
+                    <a href="https://www.linkedin.com/in/rohit-sharma-1ab293207/"><img src="Images/linkedin.png"></a>
+                    <a href="https://github.com/Rohitknl"><img src="Images/GitHub.png"></a>
+                    <a href="https://www.instagram.com/ro_hit_sharma_21/"><img src="Images/insta.png"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100014528612672"><img src="Images/face.png"></a>
+                </div>
+                
+            </div>
+            <div class="des">
+                <h3>Designed by Rohit Sharma</h3>
+            </div>
+        </div>
+    </section>
+    
 
 </body>
 </html>

@@ -24,8 +24,19 @@
     background:var(--primary);
     color:var(--secondary);
 }
+.btn-prim{
+    background:var(--ternary);
+    color:var(--pure);
+}
  .btn-primary:hover{
      background:transparent;
      border-color: var(--primary);
      color:var(--primary);
+
  }
+ .btn-prim:hover{
+    background:transparent;
+    border-color: blue;
+    color:blue;
+
+}
