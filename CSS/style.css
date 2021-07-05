@@ -138,6 +138,7 @@ section .container p{
     position:relative;
     height:225px;
     width:300px;
+    border-radius:10px;
 }
 
 .card:hover{
